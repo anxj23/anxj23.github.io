@@ -4,33 +4,51 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Quebra Galho</title>
-  <style> 
+
+  <style>
     body {
       font-family: Arial, sans-serif;
       margin: 0;
       background: #1f2933;
     }
+
     header {
       background: #7f1d1d;
-      color: vinho;
+      color: white;
       padding: 30px;
       text-align: center;
     }
+
     section {
       padding: 20px;
       max-width: 900px;
       margin: auto;
+      color: #e5e7eb;
     }
+
     .servicos {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 20px;
     }
+
     .card {
       background: white;
       padding: 20px;
       border-radius: 8px;
+      color: #111827;
     }
+
+    .orcamento {
+      background: #0f3d5e;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
     footer {
       background: #1f2933;
       color: white;
@@ -38,16 +56,15 @@
       padding: 15px;
       margin-top: 30px;
     }
-  </style>.orcamento {
-  background: #0f3d5e;
-  color: white;
-  border: none;
-  padding: 12px 20px;
-  font-size: 16px;
-  border-radius: 5px;
-  cursor: pointer;
-}
+
+    input, textarea {
+      width: 100%;
+      max-width: 400px;
+      padding: 10px;
+    }
+  </style>
 </head>
+
 <body>
 
 <header>
@@ -58,11 +75,16 @@
 <section>
   <h2>Nossos Serviços</h2>
   <div class="servicos">
-    <div class="card"><div
-  <h3>Manutenção Residencial</h3>
-  <p>Reparos rápidos, elétricos, hidráulicos e pequenos ajustes.</div>
-    <button class="orcamento">Solicitar Orçamento</button>
-    <div class="card">Serviços gerais</div>
+    <div class="card">
+      <h3>Manutenção Residencial</h3>
+      <p>Reparos rápidos, elétricos, hidráulicos e pequenos ajustes.</p>
+      <button class="orcamento">Solicitar Orçamento</button>
+    </div>
+
+    <div class="card">
+      <h3>Serviços Gerais</h3>
+      <p>Apoio em tarefas do dia a dia com agilidade e cuidado.</p>
+    </div>
   </div>
 </section>
 
@@ -70,6 +92,7 @@
   <h2>Sobre nós</h2>
   <p>Somos uma empresa fictícia criada para fins acadêmicos e apresentações.</p>
 </section>
+
 <section>
   <h2>O que nossos clientes dizem</h2>
   <div class="servicos">
@@ -83,6 +106,8 @@
     </div>
   </div>
 </section>
+
+<section>
   <h2>Fale Conosco</h2>
   <form>
     <input type="text" placeholder="Nome" required><br><br>
@@ -91,6 +116,7 @@
     <button class="orcamento">Enviar</button>
   </form>
 </section>
+
 <footer>
   <p>© 2026 Quebra Galho — Site demonstrativo</p>
 </footer>
